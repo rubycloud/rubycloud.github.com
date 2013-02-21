@@ -44,10 +44,6 @@ GEM
       middleman-core (= 3.0.11)
       middleman-more (= 3.0.11)
       middleman-sprockets (~> 3.0.6)
-    middleman-blog (3.1.1)
-      maruku (~> 0.6.0)
-      middleman-core (~> 3.0.1)
-      tzinfo (~> 0.3.0)
     middleman-core (3.0.11)
       activesupport (~> 3.2.6)
       bundler (~> 1.1)
@@ -133,6 +129,6 @@ DEPENDENCIES
   forgery
   kramdown
   middleman (~> 3.0.11)
-  middleman-blog (~> 3.1.1)
   sitemap_generator
+  tzinfo
   zurb-foundation!
