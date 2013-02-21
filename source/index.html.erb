@@ -1,4 +1,125 @@
 ---
-pageable: true
+pageable: false
 ---
-<h1>Welcome</h1>
+<!doctype html public "-//w3c//dtd xhtml 1.0 strict//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Ruby Cloud</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="Ruby Cloud is a social enterprise dedicated to retooling consumer culture." />
+  <link rel="stylesheet" href="stylesheets/styles.css" type="text/css" media="screen" />
+  <script src="javascripts/thirdparty/prototype.lite.js" type="text/javascript"></script>
+  <script src="javascripts/thirdparty/moo.fx.js" type="text/javascript"></script>
+  <script src="javascripts/thirdparty/moo.fx.pack.js" type="text/javascript"></script>
+  <script src="javascripts/load.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="header">
+  <img src="images/logo.png" alt="ruby cloud" />
+</div>
+
+<div id="content">
+  <h3 class="display" title="mission"><a href="#mission" onclick="blur();">Mission</a></h3>
+  <div class="stretcher">
+    <p>
+      We seek to build, as <a href="http://en.wikipedia.org/wiki/buckminster_fuller">Buckminster Fuller</a> put it:
+    </p>
+    <p style="margin-left:3em; margin-top:0; font-style:italic;">
+      a world that works for 100% of humanity,<br />
+      in the shortest possible time,<br />
+      through spontaneous cooperation,<br />
+      without ecological offense,<br />
+      or the disadvantage of anyone.
+    </p>
+    <p>
+      We believe in the capacity of human creativity and collective action to change the course of history.
+    </p>
+  </div>
+
+  <h3 class="display" title="founder"><a href="#founder" onclick="blur();">Founder</a></h3>
+  <div class="stretcher">
+    <p>
+      Ruby cloud was founded by <a href="http://mattolson.com">Matt Olson</a>, a <a href="http://en.wikipedia.org/wiki/systems_thinking">systems thinker</a>, 
+      <a href="http://en.wikipedia.org/wiki/hacker_(programmer_subculture)">hacker</a>, and <a href="http://en.wikipedia.org/wiki/social_entrepreneurship">social entrepreneur</a>.
+      Matt graduated from <a href="http://www.cs.berkeley.edu/">u.c. berkeley</a> with degrees in computer science and physics and has been working 
+      professionally on web apps for 15 years.
+    </p>
+    <p>
+   		Matt has broad and deep experience in building web and desktop applications, at every level of the process &mdash; from initial concept, 
+   		design and planning, to all aspects of implementation, qa, security audit, operations, performance tuning, and scaling.
+    </p>
+    <p>
+      For a more detailed description of matt's professional background, check out his <a href="http://www.linkedin.com/in/mattolson">r&eacute;sum&eacute;</a>.
+    </p>
+  </div>
+
+  <!-- 
+  <h3 class="display" title="events"><a href="#events" onclick="blur();">events</a></h3>
+  <div class="stretcher">
+    <p>
+      here's a list of upcoming events that we're attending. if you'll be there too, let us know if you want to meet up.
+    </p>
+    <p class="conference"><a href="http://founderconference.eventbrite.com/">the founder conference 2010</a></p>
+    <p class="conference"><a href="http://www.meetup.com/san-francisco-ecotuesday/"><img src="images/ecotuesday.png" alt="ecotuesday" /></a></p>
+    <p class="conference"><a href="http://sfgreendrinks.org/local-events/monthly-green-drinks"><img src="images/sfgreendrinks.png" alt="sf green drinks" /></a></p>
+  </div>
+  -->
+
+  <h3 class="display" title="contact"><a href="#contact" onclick="blur();">Contact</a></h3>
+  <div class="stretcher">
+    <p>
+      If you have questions about what we're up to, or how we might work together, send us a note. If you're a 
+      software engineer or social entrepreneur, please introduce yourself. Don't be shy!
+    </p>
+    <form id="contactform" action="index.php#contact" method="post">
+      <input type="hidden" name="action" value="contact" />
+      <table>
+        <tr>
+          <td>First Name:</td>
+          <td><input type="text" name="firstname" size="30" maxlength="50" value="" /></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" name="lastname" size="30" maxlength="50" value="" /></td>
+        </tr>
+        <tr>
+          <td>Email Address:</td>
+          <td><input type="text" name="emailaddress" size="30" maxlength="100" value="" /></td>
+        </tr>
+        <tr>
+          <td>Subject:</td>
+          <td><input type="text" name="subject" size="40" maxlength="256" value="" /></td>
+        </tr>
+        <tr>
+          <td>Message:</td>
+          <td><textarea name="message" rows="3" cols="40"></textarea></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>
+            <input type="checkbox" id="mailinglist" name="mailinglist" value="1" />
+            <label for="mailinglist">Sign up for announcements</label>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><input type="submit" value="Send" /></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+
+<div id="copyright">
+  <p>&copy;2013 Ruby Cloud Inc.</p>
+</div>
+
+<script type="text/javascript">
+  // Can't use document.onload because of IE
+  Element.cleanWhitespace('content');
+  init();
+</script>
+
+</body>
+</html>
