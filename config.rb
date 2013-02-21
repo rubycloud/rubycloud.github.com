@@ -1,8 +1,6 @@
 require 'kramdown'
 require 'extensions/sitemap.rb'
 
-Time.zone = "America/Los_Angeles"
-
 ###
 # Compass
 ###
