@@ -1,8 +1,8 @@
 /* TEAM */
-Developer: My name
-Site: http://mysite.com
-Twitter: @myhandle
-Location: Any town, USA
+Developer: Matt Olson
+Site: http://mattolson.com
+Twitter: @ahbiscuits
+Location: Chico, CA, USA
 
 /* THANKS */
 Middleman: http://middlemanapp.com
